@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="contact-layout.css">
     <title>Contact</title>
   </head>
   <body>
@@ -24,12 +24,25 @@
       <fieldset>
         <legend>Let me know your opinion</legend>
 
-        <div>
+        <div class="personal-info">
           <label for="firstName">First Name: </label>
           <input type="text" name="first_name" id="firstName">
           <label for="lastName">Last Name: </label>
           <input type="text" name="last_name" id="lastName">
+          <label for="email">Email: </label>
+          <input type="text" id="email" name="email_address">
         </div>
+
+        <div>
+          <input type="checkbox" name="" id="sign">
+          <label for="sign">Sign up for cog sci newsletter </label>
+        </div>
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+        <button type="submit">Submit</button>
+
       </fieldset>
     </form>
   </body>
